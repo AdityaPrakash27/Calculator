@@ -10,6 +10,8 @@
   --yellow: #ffe26d;
   --purple: #61497b;
   --dark-purple: #3d2a52;
+  --blue: #006fcd;
+  --white: #ffffff;
 }
 
 * {
@@ -34,18 +36,8 @@ html {
   display: flex;
   justify-content: center;
 }
-
-.img4 {
-  background: url("../img/home-carousel/sunset-sky.jpg");
-}
-.img3 {
-  background: url("../img/home-carousel/night-sky.jpg");
-}
-.img2 {
-  background: url("../img/home-carousel/red-sonw-mountain.jpg");
-}
-.img4 {
-  background: url("../img/home-carousel/red-mountain.jpg");
+.img1 {
+  background: url("../img/home-carousel/ps1.jpg");
 }
 
 .home-carousel-img {
@@ -143,12 +135,12 @@ html {
   min-height: 2.5rem;
   width: 7rem;
   color: #000;
-  background-color: var(--yellow);
+  background-color: var(--white);
   transition: 0.3s ease-in-out;
 }
 
 .home-btn:hover {
-  background-color: var(--purple);
+  background-color: var(--blue);
   color: #fff;
 }
 
@@ -178,7 +170,7 @@ html {
   font-size: 1.5rem;
   letter-spacing: 0.5px;
   cursor: default;
-  color: var(--dark-purple);
+  color: var(--blue);
 }
 
 .welcome-brief {
@@ -217,7 +209,7 @@ html {
   min-height: 5rem;
   width: 5rem;
   border-radius: 50%;
-  background-color: var(--purple);
+  background-color: var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,7 +220,7 @@ html {
 }
 
 .wc-head {
-  color: var(--purple);
+  color: var(--blue);
   font-size: 0.9rem;
   text-transform: uppercase;
   cursor: default;
@@ -250,7 +242,7 @@ html {
   text-decoration: none;
   color: #fff;
   font-size: 0.8rem;
-  background-color: var(--purple);
+  background-color: var(--blue);
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -258,7 +250,7 @@ html {
 
 .lm:hover {
   background-color: var(--yellow);
-  color: var(--purple);
+  color: var(--blue);
 }
 
 /* ___________________________________________ projects ___________________________________________  */
@@ -280,7 +272,7 @@ html {
 
 .project-text {
   font-size: 1.5rem;
-  color: var(--dark-purple);
+  color: var(--blue);
 }
 
 .project-card {
@@ -318,11 +310,11 @@ html {
 }
 .project-desc h3 {
   font-size: 1rem;
-  color: var(--purple);
+  color: var(--blue);
 }
 .project-desc p {
   font-size: 0.8rem;
-  color: var(--dark-purple);
+  color: var(--blue);
 }
 
 .launch-case-study {
@@ -352,7 +344,7 @@ html {
 }
 
 .project-card:hover .launch-case-study {
-  background-color: var(--purple);
+  background-color: var(--blue);
   color: #fff;
 }
 /* ___________________________________________ pricing ___________________________________________  */
@@ -376,7 +368,7 @@ html {
 .pricing-head {
   width: 100%;
   text-align: center;
-  color: var(--dark-purple);
+  color: var(--blue);
   font-size: 1.5rem;
   cursor: default;
 }
@@ -399,7 +391,7 @@ html {
 }
 
 .pt-head {
-  color: var(--dark-purple);
+  color: var(--blue);
   cursor: default;
 }
 
@@ -447,7 +439,7 @@ html {
 }
 
 .pt-buy-btn:hover {
-  background-color: var(--purple);
+  background-color: var(--blue);
   color: #fff;
   font-weight: 500;
 }
@@ -461,7 +453,7 @@ html {
   justify-content: flex-start;
   flex-direction: column;
   padding: 4rem 2rem;
-  background-color: var(--purple);
+  background-color: var(--blue);
 }
 
 .vps {
@@ -509,7 +501,7 @@ html {
 
 .zippy-head {
   font-size: 1.5rem;
-  color: var(--dark-purple);
+  color: var(--blue);
   letter-spacing: 1px;
 }
 
@@ -674,7 +666,7 @@ html {
 .ztm-name {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--dark-purple);
+  color: var(--blue);
 }
 .ztm-role {
   font-size: 0.8rem;
@@ -696,7 +688,7 @@ html {
 
 .liz-head {
   font-size: 1.5rem;
-  color: var(--dark-purple);
+  color: var(--blue);
   letter-spacing: 2px;
 }
 
@@ -765,7 +757,7 @@ html {
 #newsletter {
   min-height: 50vh;
   width: 100vw;
-  background: url("/img/bg/newsletter-bg.png") no-repeat;
+  background: url("E:\Virtual_Internship\CodSoft\Responsive_LandingPage\img\bg\newsletterbg.png") no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -814,7 +806,7 @@ html {
 }
 
 .news-signup-btn:hover {
-  background-color: var(--purple);
+  background-color: var(--blue);
   color: #fff;
 }
 /* ___________________________________________ Blog  ___________________________________________  */
@@ -837,7 +829,7 @@ html {
 }
 
 .blog-head {
-  color: var(--dark-purple);
+  color: var(--blue);
   font-size: 1.5rem;
   cursor: default;
 }
@@ -901,13 +893,13 @@ html {
   font-size: 0.8rem;
   font-weight: 600;
   background-color: var(--dark-shade-gray);
-  color: var(--purple);
+  color: var(--blue);
   transition: 0.2s ease-in-out;
 }
 
 .bc-read-more-btn:hover {
   background-color: var(--yellow);
-  color: var(--dark-purple);
+  color: var(--blue);
 }
 
 /* ___________________________________________ Contact  ___________________________________________  */
@@ -932,7 +924,7 @@ html {
 
 .contact-head {
   font-size: 1.5rem;
-  color: var(--dark-purple);
+  color: var(--blue);
 }
 
 .contact-form form {
@@ -950,7 +942,7 @@ html {
 .cf label {
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--dark-purple);
+  color: var(---blue);
 }
 
 .cf input {
@@ -975,15 +967,15 @@ html {
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: var(--purple);
+  background-color: var(--blue);
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .cf button:hover {
   background-color: var(--light-shade-gray);
-  border: 2px solid var(--purple);
-  color: var(--purple);
+  border: 2px solid var(--blue);
+  color: var(--blue);
   font-weight: 600;
 }
 
@@ -1031,7 +1023,7 @@ html {
 
 .fo-con-content a:hover,
 .fo-add-content a:hover {
-  color: var(--purple);
+  color: var(--blue);
 }
 
 .fo-row-1,
@@ -1052,7 +1044,7 @@ html {
 }
 
 .fab:hover {
-  color: var(--purple);
+  color: var(--blue);
 }
 
 .fo-con-content a {
