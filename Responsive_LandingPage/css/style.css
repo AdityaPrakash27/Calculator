@@ -12,6 +12,8 @@
   --dark-purple: #3d2a52;
   --blue: #006fcd;
   --white: #ffffff;
+  --black: #000000;
+  --light-black: #3D3B40;
 }
 
 * {
@@ -178,7 +180,7 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 85%;
-  color: var(--gray-text);
+  color: var(--black);
   font-weight: 500;
   cursor: default;
 }
@@ -227,7 +229,7 @@ html {
 }
 
 .wc-text {
-  color: var(--gray-text);
+  color: var(--black);
   font-size: 0.8rem;
   cursor: default;
 }
@@ -249,8 +251,8 @@ html {
 }
 
 .lm:hover {
-  background-color: var(--yellow);
-  color: var(--blue);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* ___________________________________________ projects ___________________________________________  */
@@ -335,7 +337,7 @@ html {
 }
 
 .project-card:hover {
-  background-color: var(--yellow);
+  background-color: var(--black);
   cursor: pointer;
 }
 .project-card:hover p {
@@ -427,8 +429,8 @@ html {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  color: #000;
-  background-color: var(--yellow);
+  color: var(--white);
+  background-color: var(--gray-text);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -800,8 +802,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--yellow);
-  color: #000;
+  background-color: var(--gray-text);
+  color: var(--white);
   transition: 0.2s ease-in-out;
 }
 
@@ -898,8 +900,8 @@ html {
 }
 
 .bc-read-more-btn:hover {
-  background-color: var(--yellow);
-  color: var(--blue);
+  background-color: var(--gray-text);
+  color: var(--white);
 }
 
 /* ___________________________________________ Contact  ___________________________________________  */
@@ -911,7 +913,7 @@ html {
 .contact {
   width: 100%;
   display: flex;
-  background-color: var(--yellow);
+  background-color: var(--light-black);
   justify-content: space-between;
 }
 .contact-cont {
@@ -1326,7 +1328,7 @@ html {
   .contact-cont {
     width: 100%;
     align-items: center;
-    background-color: var(--yellow);
+    background-color: var(--gray-text);
   }
 
   .contact-form form {
