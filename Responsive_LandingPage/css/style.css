@@ -485,15 +485,15 @@ html {
 .vp:hover {
   transform: translateY(-1rem);
 }
-/* ___________________________________________ Zippy Team ___________________________________________  */
-#zippy-team {
+/* ___________________________________________ Games ___________________________________________  */
+#Games {
   min-height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   padding: 3rem;
 }
-.zippy-team {
+.Games {
   width: 85%;
   display: flex;
   align-items: center;
@@ -507,7 +507,7 @@ html {
   letter-spacing: 1px;
 }
 
-.zippy-team-members {
+.Games-name {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -539,12 +539,8 @@ html {
   align-items: center;
 }
 
-.ztm-social-icon {
-  display: none;
-}
-
 .ztm-img-1 {
-  background: url("../img/team/camille-seo-monster.jpg") no-repeat;
+  background: url("../img/game/1.jpg") no-repeat;
   background-size: cover;
   border-radius: 50%;
 }
@@ -552,35 +548,16 @@ html {
 .ztm-img-1:hover {
   background: linear-gradient(
       to right,
-      rgba(97, 73, 123, 0.5),
-      rgba(97, 73, 123, 0.6)
+      #61497b80,
+      #61497b99
     ),
-    url("../img/team/camille-seo-monster.jpg") no-repeat;
+    url("../img/game/1.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
 
-.ztm-img:hover .ztm-social-icon {
-  width: 85%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-  color: #fff;
-}
-.ztm-social-icon .ztm-fab:hover {
-  color: #fff;
-  transform: translateY(-5px);
-}
-
-.ztm-social-icon a {
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .ztm-img-2 {
-  background: url("../img/team/christian-creative-head.jpg");
+  background: url("../img/game/2.jpg");
   background-size: cover;
   border-radius: 50%;
 }
@@ -590,12 +567,12 @@ html {
       rgba(97, 73, 123, 0.5),
       rgba(97, 73, 123, 0.6)
     ),
-    url("../img/team/christian-creative-head.jpg") no-repeat;
+    url("../img/game/2.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
 .ztm-img-3 {
-  background: url("../img/team/serene-Marketing-Manager.jpg");
+  background: url("../img/game/3.jpg");
   background-size: cover;
   border-radius: 50%;
 }
@@ -605,12 +582,12 @@ html {
       rgba(97, 73, 123, 0.5),
       rgba(97, 73, 123, 0.6)
     ),
-    url("../img/team/serene-Marketing-Manager.jpg") no-repeat;
+    url("../img/game/3.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
 .ztm-img-4 {
-  background: url("../img/team/emilia-art-director.jpg");
+  background: url("../img/game/4.jpg");
   background-size: cover;
   border-radius: 50%;
 }
@@ -620,12 +597,12 @@ html {
       rgba(97, 73, 123, 0.5),
       rgba(97, 73, 123, 0.6)
     ),
-    url("../img/team/emilia-art-director.jpg") no-repeat;
+    url("../img/game/4.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
 .ztm-img-5 {
-  background: url("../img/team/george-senior-designer.jpg");
+  background: url("../img/game/5.jpg");
   background-size: cover;
   border-radius: 50%;
 }
@@ -635,12 +612,12 @@ html {
       rgba(97, 73, 123, 0.5),
       rgba(97, 73, 123, 0.6)
     ),
-    url("../img/team/george-senior-designer.jpg") no-repeat;
+    url("../img/game/5.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
 .ztm-img-6 {
-  background: url("../img/team/ariana-web-developer.png");
+  background: url("../img/game/6.png");
   background-size: cover;
   border-radius: 50%;
 }
@@ -650,7 +627,7 @@ html {
       rgba(97, 73, 123, 0.5),
       rgba(97, 73, 123, 0.6)
     ),
-    url("../img/team/ariana-web-developer.png") no-repeat;
+    url("../img/game/6.png") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
@@ -675,85 +652,6 @@ html {
   font-weight: 500;
   opacity: 0.5;
 }
-
-/* ___________________________________________ Life in Zippy ___________________________________________  */
-/* #life-in-zippy {
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 2rem;
-  row-gap: 4rem;
-  background-color: var(--light-shade-gray);
-}
-
-.liz-head {
-  font-size: 1.5rem;
-  color: var(--blue);
-  letter-spacing: 2px;
-}
-
-.life-in-zippy {
-  min-height: 65vh;
-  width: 75vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.liz-big-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40vh;
-  width: 100%;
-}
-.liz-b {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-.liz-small-img {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.liz-s {
-  position: absolute;
-  min-height: 6rem;
-  width: 7rem;
-  left: 0;
-  bottom: 0;
-}
-
-.liz-img-1 {
-  background: url("../img/life-in-zippy/photo1.jpg") no-repeat;
-  background-size: contain;
-}
-.liz-img-2 {
-  background: url("../img/life-in-zippy/photo2.jpg") no-repeat;
-  background-size: contain;
-}
-.liz-img-3 {
-  background: url("../img/life-in-zippy/photo3.jpg") no-repeat;
-  background-size: contain;
-}
-.liz-img-4 {
-  background: url("../img/life-in-zippy/photo4.jpg") no-repeat;
-  background-size: contain;
-}
-.liz-img-5 {
-  background: url("../img/life-in-zippy/photo5.jpg") no-repeat;
-  background-size: contain;
-}
-.liz-img-6 {
-  background: url("../img/life-in-zippy/photo6.jpg") no-repeat;
-  background-size: contain;
-} */
 
 /* ___________________________________________ Newsletter  ___________________________________________  */
 #newsletter {
@@ -858,16 +756,16 @@ html {
 }
 
 .bc-img-1 {
-  background: url("/img/blog/blog-1.jpg");
+  background: url("https://blog.playstation.com/tachyon/2024/06/95e43ef539e42a330bde500469911b577469b17a-scaled.jpeg?resize=1088%2C612&crop_strategy=smart&zoom=1");
   background-size: cover;
 }
 
 .bc-img-2 {
-  background: url("/img/blog/blog-2.jpg");
+  background: url("https://blog.playstation.com/tachyon/2024/06/780ccb334873317af774cf4a7a5ecf4a383e6f63.jpg?resize=1088%2C612&crop_strategy=smart&zoom=1.5");
   background-size: cover;
 }
 .bc-img-3 {
-  background: url("/img/blog/blog-3.jpg");
+  background: url("https://blog.playstation.com/tachyon/2024/06/367b3b8c1614cc9833235ce504be0b14a0e7be43-scaled.jpg?resize=1088%2C612&crop_strategy=smart&zoom=1.5");
   background-size: cover;
 }
 .bc-text {
@@ -1096,10 +994,6 @@ html {
     display: none;
   }
 
-  /* .navbar:target .nav-logo-text:target .navlinks {
-    display: block;
-    overflow: hidden;
-  } */
 
   #toogle:checked + .navlinks {
     display: flex;
@@ -1239,21 +1133,21 @@ html {
     height: 171px;
   }
 }
-/* ___________________________________________ Zippy Team ___________________________________________  */
+/* ___________________________________________ Game ___________________________________________  */
 /* ipad */
 @media only screen and (max-width: 800px) {
-  .zippy-team {
+  .Games {
     row-gap: 0;
     width: 100%;
     justify-content: space-around;
   }
-  .zippy-team-members {
+  .Games-name {
     width: 100%;
   }
 }
 /* iphonex */
 @media only screen and (max-width: 500px) {
-  .zippy-team {
+  .Games {
     row-gap: 3rem;
   }
 
