@@ -1,67 +1,104 @@
-const display = document.getElementById('display');
-const buttons = document.querySelectorAll('.btn');
-const clearButton = document.getElementById('clear');
-const equalsButton = document.getElementById('equals');
-
-let currentInput = '';
-let operator = '';
-let result = '';
-
-buttons.forEach(button => {
-    button.addEventListener('click', () => handleButtonClick(button.textContent));
-});
-
-clearButton.addEventListener('click', clearDisplay);
-equalsButton.addEventListener('click', performCalculation);
-
-function handleButtonClick(value) {
-    if (value >= '0' && value <= '9') {
-        currentInput += value;
-    } else if (value === '.' && !currentInput.includes('.')) {
-        currentInput += value;
-    } else if (value === 'C') {
-        clearDisplay();
-    } else if (value === '=') {
-        performCalculation();
-        operator = '';
-    } else {
-        if (currentInput !== '') {
-            if (operator !== '') {
-                performCalculation();
-            } else {
-                result = currentInput;
-            }
-            operator = value;
-            currentInput = '';
-        }
+document.addEventListener("DOMContentLoaded", function () {
+    const display = document.getElementById("display");
+    let currentInput = "0";
+    let currentOperator = "";
+    let prevInput = "";
+  
+    function updateDisplay() {
+      display.textContent = currentInput;
     }
-    display.value = `${result} ${operator} ${currentInput}`;
-}
-
-
-
-function performCalculation() {
-    if (currentInput !== '') {
-        if (operator === '+') {
-            result = (parseFloat(result) + parseFloat(currentInput)).toString();
-        } else if (operator === '-') {
-            result = (parseFloat(result) - parseFloat(currentInput)).toString();
-        } else if (operator === '*') {
-            result = (parseFloat(result) * parseFloat(currentInput)).toString();
-        } else if (operator === '/') {
-            result = (parseFloat(result) / parseFloat(currentInput)).toString();
-        } else {
-            result = currentInput;
-        }
+  
+    function handleDigitClick(digit) {
+      if (
+        currentInput === "0" ||
+        currentInput === "Infinity" ||
+        currentInput === "-Infinity"
+      ) {
+        currentInput = digit;
+      } else {
+        currentInput += digit;
+      }
+      updateDisplay();
     }
-    currentInput = '';
-    operator = '';
-    display.value = result;
-}
-
-function clearDisplay() {
-    currentInput = '';
-    operator = '';
-    result = '';
-    display.value = '';
-}
+  
+    function handleOperatorClick(operator) {
+      prevInput = currentInput;
+      currentInput = "0";
+      currentOperator = operator;
+    }
+  
+    function handleEqualsClick() {
+      const prev = parseFloat(prevInput);
+      const current = parseFloat(currentInput);
+  
+      switch (currentOperator) {
+        case "+":
+          currentInput = prev + current;
+          break;
+        case "-":
+          currentInput = prev - current;
+          break;
+        case "*":
+          currentInput = prev * current;
+          break;
+        case "/":
+          currentInput = prev / current;
+          break;
+      }
+  
+      currentOperator = "";
+      prevInput = "";
+      updateDisplay();
+    }
+  
+    function clear() {
+      currentInput = "0";
+      currentOperator = "";
+      prevInput = "";
+      updateDisplay();
+    }
+  
+    // Add event listeners to digit buttons
+    for (let i = 0; i <= 9; i++) {
+      document.getElementById(i.toString()).addEventListener("click", () => {
+        handleDigitClick(i.toString());
+      });
+    }
+  
+    // Add event listeners to operator buttons
+    document
+      .getElementById("add")
+      .addEventListener("click", () => handleOperatorClick("+"));
+    document
+      .getElementById("subtract")
+      .addEventListener("click", () => handleOperatorClick("-"));
+    document
+      .getElementById("multiply")
+      .addEventListener("click", () => handleOperatorClick("*"));
+    document
+      .getElementById("divide")
+      .addEventListener("click", () => handleOperatorClick("/"));
+  
+    // Add event listeners to other buttons
+    document.getElementById("decimal").addEventListener("click", () => {
+      if (!currentInput.includes(".")) {
+        currentInput += ".";
+        updateDisplay();
+      }
+    });
+  
+    document
+      .getElementById("equals")
+      .addEventListener("click", handleEqualsClick);
+    document.getElementById("clear").addEventListener("click", clear);
+  
+    document.getElementById("backspace").addEventListener("click", () => {
+      currentInput = currentInput.slice(0, -1);
+      if (currentInput === "") {
+        currentInput = "0";
+      }
+      updateDisplay();
+    });
+  
+    updateDisplay();
+  });
