@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #F6F4EB;
     font-family: Arial, sans-serif;
   }
   
@@ -14,7 +14,7 @@ body {
     grid-gap: 10px;
     max-width: 300px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #4682A9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -34,7 +34,7 @@ body {
     text-align: left;
     padding: 5px;
     font-size: 15px;
-    background-color: aquamarine;
+    background-color: #91C8E4;
     border: 1px solid black;
     border-radius: 5px;
   }
