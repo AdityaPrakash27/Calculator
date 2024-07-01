@@ -17,3 +17,5 @@ The calculator app features a clean and minimalistic design, with a focus on usa
 - The app is responsive, with a maximum width of 300px to ensure a smooth user experience on desktop and mobile devices.<br>
 <h3>Acknowledgments</h3>
 The calculator app uses the Arial font, which is licensed under the Apache License 2.0.
+<h3>Contributing</h3>
+If you'd like to contribute to this project, please fork the repository and submit a pull request. I'm always looking for ways to improve and expand my portfolio!
