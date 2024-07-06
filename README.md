@@ -7,7 +7,7 @@ A simple calculator app built using HTML, CSS, and JavaScript.
 - Displays calculation history<br>
 - Responsive design for a smooth user experience<br>
 <h3>Design</h3>
-The calculator app features a clean and minimalistic design, with a focus on usability. The interface is divided into two main sections:<br>
+The calculator app features a clean and minimalistic design, with a focus on usability. The interface is divided into three main sections:<br>
 - The display area and the keypad.<br>
 - The display area shows the current calculation and the result.<br>
 - The keypad consists of buttons for digits, operators, and functions.<br>
